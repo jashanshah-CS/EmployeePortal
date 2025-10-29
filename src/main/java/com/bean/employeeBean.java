@@ -9,12 +9,11 @@ public class employeeBean
 	private String phone;
 	private String email;
 	private String gender;
-	private String status;
 	private String address;
 	private String title;
 	private String department;
 	public employeeBean(int id, String firstname, String lastname, String dob, String phone, String email,
-			String gender, String status, String address, String title, String department)
+			String gender, String address, String title)
 	{
 		this.id = id;
 		this.firstname = firstname;
@@ -23,13 +22,12 @@ public class employeeBean
 		this.phone = phone;
 		this.email = email;
 		this.gender = gender;
-		this.status = status;
 		this.address = address;
 		this.title = title;
 		this.department = department;
 	}
 	public employeeBean(String firstname, String lastname, String dob, String phone, String email,
-			String gender, String status, String address, String title, String department)
+			String gender, String address, String title, String department)
 	{
 		this.id = id;
 		this.firstname = firstname;
@@ -38,7 +36,6 @@ public class employeeBean
 		this.phone = phone;
 		this.email = email;
 		this.gender = gender;
-		this.status = status;
 		this.address = address;
 		this.title = title;
 		this.department = department;
@@ -85,12 +82,6 @@ public class employeeBean
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
 	public String getAddress() {
 		return address;
 	}
@@ -108,8 +99,5 @@ public class employeeBean
 	}
 	public void setDepartment(String department) {
 		this.department = department;
-	}
-	
-	
-	
+	}	
 }
