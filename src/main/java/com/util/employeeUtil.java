@@ -10,37 +10,37 @@ public class employeeUtil
 	private static final String DRIVERCLASS = "com.mysql.cj.jdbc.Driver";
 	private static final String USERNAME = "root";
 	private static final String PASSWORD = "root";
-	
-	@SuppressWarnings("unused")
+
 	public static Connection DBConnection() 
 	{
 		Connection con = null;
+		
 		try 
 		{
 			Class.forName(DRIVERCLASS);
 			
 			try 
 			{
-				DriverManager.getConnection(URLNAME, USERNAME, PASSWORD);
-			}
+				con = DriverManager.getConnection(URLNAME , USERNAME , PASSWORD);
+			} 
 			catch (SQLException e) 
 			{
 				e.printStackTrace();
 			}
-		}
+		} 
 		catch (ClassNotFoundException e) 
 		{
 			e.printStackTrace();
 		}
-		
 		if(con != null) 
 		{
-			System.out.println("Data Base Connected.");
+			System.out.println("Data Base Connected -- " + con);
 		}
 		else 
 		{
-			System.out.println("Data Base Not Connected.");
+			System.out.println("Data Base Not Connected");
 		}
+		
 		return con;
 	}
 }

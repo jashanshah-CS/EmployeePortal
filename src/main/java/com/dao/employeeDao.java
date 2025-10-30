@@ -73,7 +73,7 @@ public class employeeDao
 					String address = rs.getString(8);
 					String title = rs.getString(9);
 					String department = rs.getString(10);
-					employeeBean ebean = new employeeBean(id , firstname , lastname , dob , phone , gender , address , title , department);
+					employeeBean ebean = new employeeBean(id , firstname , lastname , dob , phone , email , gender , address , title , department);
 					list.add(ebean);
 				}
 			}

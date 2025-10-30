@@ -12,8 +12,7 @@ public class employeeBean
 	private String address;
 	private String title;
 	private String department;
-	public employeeBean(int id, String firstname, String lastname, String dob, String phone, String email,
-			String gender, String address, String title)
+	public employeeBean(int id, String firstname, String lastname, String dob, String phone, String email , String gender, String address, String title, String department)
 	{
 		this.id = id;
 		this.firstname = firstname;
@@ -26,8 +25,7 @@ public class employeeBean
 		this.title = title;
 		this.department = department;
 	}
-	public employeeBean(String firstname, String lastname, String dob, String phone, String email,
-			String gender, String address, String title, String department)
+	public employeeBean(String firstname, String lastname, String dob, String phone, String email , String gender, String address, String title, String department)
 	{
 		this.id = id;
 		this.firstname = firstname;

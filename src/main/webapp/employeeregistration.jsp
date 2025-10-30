@@ -227,26 +227,22 @@
         <h1>Employee Registration</h1>
         <p class="subtitle">Join our team - Fill in your details below</p>
 
-        <form action="submit_employee.php" method="POST">
+        <form action="employeeregistration">
             <div class="row">
                 <div class="form-group">
-                    <label for="first_name">First Name <span class="required">*</span></label>
-                    <input type="text" id="first_name" name="first_name" value = "firstname" placeholder="Enter first name" required>
+                    <input type="text" id="first_name" name="firstname" placeholder="Enter first name" required>
                 </div>
                 <div class="form-group">
-                    <label for="last_name">Last Name <span class="required">*</span></label>
-                    <input type="text" id="last_name" name="last_name" value = "lastname" placeholder="Enter last name" required>
+                    <input type="text" id="last_name" name="lastname" placeholder="Enter last name" required>
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-group">
-                    <label for="date_of_birth">Date of Birth <span class="required">*</span></label>
-                    <input type="date" id="date_of_birth" value = "dob" name="date_of_birth" required>
+                    <input type="date" id="date_of_birth" name="dob" required>
                 </div>
                 <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select id="gender" name="gender" value = "gender">
+                    <select id="gender" name="gender">
                         <option value="">Select Gender</option>
                         <option>Male</option>
                         <option>Female</option>
@@ -257,30 +253,25 @@
 
             <div class="row">
                 <div class="form-group">
-                    <label for="phone_number">Phone Number</label>
-                    <input type="tel" id="phone_number" name="phone_number" value = "phone" placeholder="+1 (234) 567-8900">
+                    <input type="tel" id="phone_number" name="phone" placeholder="+1 (234) 567-8900">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email Address <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" value = "email" placeholder="your.email@company.com" required>
+                    <input type="email" id="email" name="email" placeholder="your.email@company.com" required>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="address">Residential Address</label>
-                <textarea id="address" name="address" value = "address" placeholder="Street, City, State, ZIP Code"></textarea>
+                <textarea id="address" name="address" placeholder="Street, City, State, ZIP Code"></textarea>
             </div>
 
             <hr>
 
             <div class="row">
                 <div class="form-group">
-                    <label for="job_title">Job Title</label>
-                    <input type="text" id="job_title" name="job_title" value = "title" placeholder="e.g., Software Engineer">
+                    <input type="text" id="job_title" name="title" placeholder="e.g., Software Engineer">
                 </div>
                 <div class="form-group">
-                    <label for="department">Department <span class="required">*</span></label>
-                    <select id="department" name="department" value = "department" required>
+                    <select id="department" name="department" required>
                         <option value="">Select Department</option>
                         <option>HR</option>
                         <option>IT</option>

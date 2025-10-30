@@ -18,11 +18,19 @@
   </welcome-file-list>
   
   <servlet>
-  	<servlet-name>employeeregistration</servlet-name>
-  	<servlet-class>com.controller.employeeregistration</servlet-class>
+  	<servlet-name>ListEmployeeServlet</servlet-name>
+  	<servlet-class>com.controller.ListEmployeeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>employeeregistration</servlet-name>
+  	<servlet-name>ListEmployeeServlet</servlet-name>
+  	<url-pattern>/ListEmployeeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>InsertEmployeeServlet</servlet-name>
+  	<servlet-class>com.controller.InsertEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InsertEmployeeServlet</servlet-name>
   	<url-pattern>/employeeregistration</url-pattern>
   </servlet-mapping>
 </web-app>
